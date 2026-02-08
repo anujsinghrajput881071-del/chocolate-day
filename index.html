@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chocolate Day 🍫</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#3e2723,#6d4c41);
+  font-family:'Segoe UI',sans-serif;
+  color:#fff;
+}
+.card{
+  width:90%;
+  max-width:420px;
+  background:rgba(255,255,255,0.12);
+  padding:25px;
+  border-radius:22px;
+  text-align:center;
+  box-shadow:0 15px 35px rgba(0,0,0,0.45);
+}
+h1{
+  font-size:26px;
+  margin-bottom:10px;
+}
+p{
+  display:none;
+  font-size:18px;
+  line-height:1.5;
+  margin-top:15px;
+}
+button{
+  margin-top:22px;
+  padding:12px 28px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  background:#fff;
+  color:#4e342e;
+  cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>🍫 Supriya 🍫</h1>
+
+<p id="t1">Aaj Chocolate Day hai… aur haan, hum thode door bhi hain 😔</p>
+<p id="t2">Paas hota to chocolate tere haath me hoti…</p>
+<p id="t3">Par distance feeling ko kam nahi kar sakta ❤️</p>
+<p id="t4">Is chhote se link ke saath samajh le…</p>
+<p id="t5"><b>🍫 Ye meri taraf se chocolate hai, sirf tere liye 😊</b></p>
+
+<button onclick="showText()">Tap karo 🍫</button>
+</div>
+
+<script>
+let i = 1;
+function showText(){
+  if(i <= 5){
+    document.getElementById("t"+i).style.display = "block";
+    i++;
+  }
+}
+</script>
+
+</body>
+</html>
